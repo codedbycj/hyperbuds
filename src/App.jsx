@@ -6,9 +6,7 @@ function App() {
     <div className="w-screen h-screen bg-white flex items-center justify-center relative overflow-hidden px-4">
       {/* Back Arrow */}
       <div className="absolute top-6 left-6">
-        <button className="text-indigo-500 hover:text-indigo-700 text-2xl">
-          ←
-        </button>
+          <img src="./arrow.png" alt="Go back" className="w-3 h-3 sm:w-4 sm:h-4" />
       </div>
 
       {/* Floating Space Stuff */}
@@ -24,13 +22,8 @@ function App() {
 
       {/* Main Content */}
       <div className="flex flex-col items-center justify-center text-center">
-        {/* 404 + Rocket */}
-        <div className="relative flex items-center justify-center">
-          <h1 className="text-[6rem] sm:text-[8rem] md:text-[10rem] font-black text-violet-700 z-10">
-            404
-          </h1>
-          <div className="absolute -rotate-12 translate-y-4 text-5xl">🚀</div>
-        </div>
+        {/* Real 404 image from figma */}
+        <img src="./404-pic.png" alt="404 Image" className="w-full max-w-md mb-6" />
 
         {/* Headings */}
         <h2 className="mt-4 text-xl sm:text-2xl md:text-3xl font-semibold text-indigo-900">
@@ -44,6 +37,7 @@ function App() {
         <a
           href="/"
           className="mt-6 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-200 w-full max-w-xs"
+          style={{ color: "#fff"}} 
         >
           Home
         </a>
@@ -51,5 +45,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
