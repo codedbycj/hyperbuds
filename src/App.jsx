@@ -1,12 +1,13 @@
 import React from "react";
 import "./index.css";
 
+
 function App() {
   return (
     <div className="w-screen h-screen bg-white flex items-center justify-center relative overflow-hidden px-4">
       {/* Back Arrow */}
       <div className="absolute top-6 left-6">
-          <img src="./arrow.png" alt="Go back" className="w-3 h-3 sm:w-4 sm:h-4" />
+          <img src={`${import.meta.env.BASE_URL}arrow.png`}alt="Go back" className="w-3 h-3 sm:w-4 sm:h-4" />
       </div>
 
       {/* Floating Space Stuff */}
@@ -23,7 +24,7 @@ function App() {
       {/* Main Content */}
       <div className="flex flex-col items-center justify-center text-center">
         {/* Real 404 image from figma */}
-        <img src="./404-pic.png" alt="404 Image" className="w-full max-w-md mb-6" />
+        <img src={`${import.meta.env.BASE_URL}404-pic.png`}alt="404 Image" className="w-full max-w-md mb-6" />
 
         {/* Headings */}
         <h2 className="mt-4 text-xl sm:text-2xl md:text-3xl font-semibold text-indigo-900">
